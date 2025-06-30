@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>사용 설명서</title>
+  <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+  <style>
+    body {
+      max-width: 800px;
+      margin: 40px auto;
+      font-family: 'Noto Sans KR', sans-serif;
+      line-height: 1.6;
+      padding: 0 16px;
+    }
+  </style>
+</head>
+<body>
+  <div id="markdown-view"></div>
+
+  <script>
+    fetch('README.md')
+      .then(res => res.text())
+      .then(text => {
+        document.getElementById('markdown-view').innerHTML = marked.parse(text);
+      });
+  </script>
+</body>
+</html>

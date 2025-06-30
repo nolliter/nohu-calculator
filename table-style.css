@@ -1,0 +1,37 @@
+
+.result-table {
+  width: 100%;
+  max-width: 960px;
+  margin: 40px auto;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 14px;
+  color: #222;
+}
+
+.result-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.result-table thead {
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.result-table th,
+.result-table td {
+  padding: 10px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.result-table tr:hover {
+  background-color: #f4f6f8;
+}
+
+.result-table th[title], .result-table td[title] {
+  cursor: help;
+}

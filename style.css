@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #fff;
+  /* display: flex; */
+  display: block;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  text-align: center;
+  padding: 16px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.section {
+  width: 100%;
+  max-width: 600px; /* 데스크탑 기준 최대 폭 */
+  margin: 0 auto;
+  text-align: center;
+}
+h1 {
+  font-size: 28px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+.description {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+}
+.add-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #000;
+  color: white;
+  font-size: 14px;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.input-row {
+  gap: 10px;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+.input-row input,
+.input-row select,
+.select-wrapper {
+  width: 100%;
+}
+.input-row input {
+  overflow: visible;
+  padding: 10px;
+  font-size: 14px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  box-sizing: border-box;
+  /* 이미지 저장 시 잘림 방지 */
+  line-height: 1.5;
+  height: auto; /* 고정 높이 피하기 */
+  vertical-align: middle;
+  
+}
+.input-row button.delete-btn {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #ccc;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.calculate-btn {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  margin: 20px 0;
+}
+.divider {
+  width: 100%;
+  max-width: 480px;
+  height: 1px;
+  margin: 40px auto;
+  background-color: #e0e0e0;
+}
+.section.fixed-row-1 .input-row,
+.section.fixed-row-2 .input-row {
+  /*width: 480px;
+  margin: 0 auto;*/
+  display: grid;
+  gap: 10px;
+  width: 100%;
+  max-width: 480px;
+  /*padding: 0 16px;*/
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+.section.fixed-row-1 .input-row {
+  grid-template-columns: 1fr;
+}
+.section.fixed-row-2 .input-row {
+  grid-template-columns: 1fr 1fr;
+}
+/* 드롭다운 디자인 */
+.custom-select {
+  font-size: 14px;
+  font-family: inherit;
+  padding: 10px 36px 10px 12px;
+  border-radius: 10px;
+  border: none;
+  background-color: #f0f0f0;
+  color: #333;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  box-sizing: border-box;
+  width: 100%;
+}
+.select-wrapper {
+  position: relative;
+  width: 100%;
+}
+.select-wrapper::after {
+  content: "▼";
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+  color: #666;
+}
+.save-btn {
+  background-color: #000;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 12px 40px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.custom-link {
+  font-size: 14px;
+  color: #3a3a3a;
+  text-decoration: none;
+  border-bottom: 1px solid #dcdcdc;
+  padding-bottom: 2px;
+  transition: border-color 0.2s ease, color 0.2s ease;
+  margin-bottom: 20px;
+}
+.custom-link:hover {
+  border-color: #000;
+  color: #000;
+}
